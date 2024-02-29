@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    border: none;
+}
+
+.container {
+    max-width: 1760px;
+    margin: 0 auto;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,14 +1,55 @@
 * {
-    margin: 0;
-    border: none;
+    font-family: "Roboto Mono", monospace;
 }
-
 .container {
-    max-width: 1760px;
-    margin: 0 auto;
+    max-width: 1700px;
+    margin: 120px auto;
 }
 
-.list {
+.header > .container, .footer > .container {
+    margin: 24px auto 24px auto;
+}
+
+.header__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.taskbar__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.taskbar__item {
+    margin: 0 20px;
+    list-style-type: none;
+    font-size: 24px;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: -0.03ch;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo__item {
+    margin: auto 10px;
+}
+
+.resume {
+    background-color: black;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 20px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }

@@ -3,7 +3,7 @@
     font-family: "Roboto Mono", monospace;
 }
 .container {
-    max-width: 1700px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 60px;
 }
@@ -11,6 +11,7 @@
 /*Header styles*/
 
 .header {
+    z-index: 9999;
     position: sticky;
     top: 0px;
     backdrop-filter: blur(10px) saturate(10%) contrast(100%);
@@ -66,6 +67,52 @@
 
 /*Description styles*/
 
-.description__item {
+.description > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
     
+}
+
+
+
+.description__text > p {
+    color: #71717A;
+    
+}
+
+.description__text-title {
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.description__text-title > span {
+    font-weight: 900;
+}
+
+.description__icons {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+}
+
+.description__icons-box {
+    width: 56px;
+    height: 56px;
+    border: 3px black solid;
+    border-radius: 7px;
+    margin: 0 20px 0 0;
+    position: relative;
+}
+
+.description__icons-box > img {
+    cursor: pointer;
+    width: 60%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }

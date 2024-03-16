@@ -87,7 +87,7 @@
     font-size: 48px;
 }
 
-.description__text-title > span {
+span {
     font-weight: 900;
 }
 
@@ -123,3 +123,18 @@
     transform: translate(-50%, -50%);
 }
 
+.skills__title {
+    font-size: 48px;
+    text-align: center;
+}
+
+.skills__table {
+    display: flex;
+}
+
+.skills__table-box {
+    width: 186px;
+    height: 186px;
+    border: 1px black solid;
+    border-radius: 6px;
+}

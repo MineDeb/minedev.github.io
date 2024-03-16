@@ -3,7 +3,7 @@
     font-family: "Roboto Mono", monospace;
 }
 .container {
-    max-width: 1700px;
+    max-width: 1400px;
     margin: 120px auto;
 }
 
@@ -64,7 +64,3 @@
 }
 
 /*Description styles*/
-
-.description__item {
-    
-}

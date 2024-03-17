@@ -208,3 +208,69 @@ span {
 .experience__header-date {
     font-weight: bold;
 }
+
+/*About section*/
+
+.about > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__block {
+    max-width: 756px;
+    position: relative;
+}
+
+.about__title {
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.about__block-description {
+    color: #71717a;
+}
+
+/*Projects section*/
+
+.projects {
+    background-color: black;
+}
+
+.projects__title {
+    color: white;
+    text-align: center;
+    font-size: 48px;
+}
+
+.projects__box {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.projects__box-title {
+    color: white;
+    font-size: 48px;
+}
+
+.projects__box-name {
+    color: white;
+    font-size: 32px;
+}
+
+.projects__box-comment {
+    color: #bababd;
+
+}
+
+.projects__box-item {
+    /* background: gray; */
+    flex-basis: 47%;
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+.projects__box-img {
+    width: 100%;
+}

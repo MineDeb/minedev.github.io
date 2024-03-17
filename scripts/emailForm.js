@@ -1,8 +1,7 @@
-let verificationCode = Math.floor(Math.random() * 10000);
-let codeMessage = `<h2 style="color: #e8aa00">Your Verification Code is ${verificationCode}</h2>`
-
 
 function emailSend () {
+  let verificationCode = Math.round(Math.random() * 10000);
+  let codeMessage = `<h2 style="color: #e8aa00">Your Verification Code is ${verificationCode}</h2>`
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "csglobaloffensiveupgrade@gmail.com",

@@ -208,7 +208,7 @@
                     <p class="projects__box-name"><span>Crypto Screener Application</span></p>
                     <p class="projects__box-comment">I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
                         standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
-                    <img class="projects__box-link" src="assets/link.svg" alt="link">
+                    <a href="#"><img class="projects__box-link" src="assets/link.svg" alt="link"></a>
             </li>
             <li class="projects__box-item">
                     <p class="projects__box-title">0<span>2</span></p>
@@ -216,7 +216,7 @@
                     <p class="projects__box-comment">I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
                         standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.
                         when an unknown printer took a galley of type and scrambled it to specimen book.</p>
-                    <img class="projects__box-link" src="assets/link.svg" alt="link">
+                    <a href="#"><img class="projects__box-link" src="assets/link.svg" alt="link"></a>
             </li>
             <li class="projects__box-item">
                 <img class="projects__box-img" src="assets/EuphoriaApp.png" alt="EuphoriaApp">
@@ -229,7 +229,7 @@
                     <p class="projects__box-name"><span>Blog Website Template</span></p>
                     <p class="projects__box-comment">I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
-                    <img class="projects__box-link" src="assets/link.svg" alt="link">
+                    <a href="#"><img class="projects__box-link" src="assets/link.svg" alt="link"></a>
             </li>
         </ul>
     </div>
@@ -250,7 +250,7 @@
                 <img src="assets/FloraAvatar.svg" alt="avatar">
                 <p class="testimonial__description">I recently had to jump on 10+<br> different calls across eight<br> different countries to find the right owner.</p>
                 <hr>
-                <p class="testimonial__name">Evren Shah</p>
+                <p class="testimonial__name">Flora Sheen</p>
                 <p class="testimonial__profession">Designer</p>
             </div>
             <div class="testimonial__card">
@@ -265,12 +265,26 @@
 </div>
 
 <div class="feedback">
-    <div class="container"></div>
+    <div class="container">
+        <form onsubmit="emailSend(); reset(); return false;" class="feedback__form">
+            <input type="text" class="feedback__input" id="name" placeholder="Your name" name="name" required>
+            <input type="text" class="feedback__input" id="email" placeholder="Your email" name="email" required>
+            <input type="text" class="feedback__input" id="link" placeholder="Your website(if exists)" name="website" required>
+            <input type="text" class="feedback__input" id="message" placeholder="How can I help?*" name="message" required>
+            <button class="feedback__button">Get In Touch</button>
+        </form>
+    </div>
 </div>
 
 <div class="footer">
     <div class="container"></div>
 </div>
+
+<script src="https://smtpjs.com/v3/smtp.js">
+
+</script>
+<script src="scripts/emailForm.js"></script>
+<script src="scripts/crypto.js"></script>
 
 </body>
 </html>

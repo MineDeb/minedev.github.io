@@ -1,14 +1,35 @@
+// let emailValue;
+// function handleChange(element) {
+//   emailValue = String(element.value); // текущее значение
+// }
+
+// let submit = document.querySelector('.feedback__button');
+// submit.addEventListener('click', () => {
+//   let name = document.getElementById('name').value;
+//   let email = document.getElementById('email').value;
+//   let link = document.getElementById('link').value;
+//   let message = document.getElementById('message').value;
+//   console.log(`Имя: ${name}\nПочта: ${email}\nСайт: ${link}\nТекст: ${message})`)
+
+  
+// })
 
 function emailSend () {
+
+  let name = document.getElementById('name').value;
+  let email = document.getElementById('email').value;
+  let link = document.getElementById('link').value;
+  let message = document.getElementById('message').value;
+  console.log(`Имя: ${name}\nПочта: ${email}\nСайт: ${link}\nТекст: ${message})`)
   let verificationCode = Math.round(Math.random() * 10000);
   let codeMessage = `<h2 style="color: #e8aa00">Your Verification Code is ${verificationCode}</h2>`
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "csglobaloffensiveupgrade@gmail.com",
         Password : "1B7FA9A0CA114B17A747E10E0580F2DAE769",
-        To : 'philmillioner@gmail.com',
+        To : email,
         From : "csglobaloffensiveupgrade@gmail.com",
-        Subject : "This is the subject",
+        Subject : "Обращение по форме обратной связи",
         Body : `
         <div style="
         font-family: system-ui;
@@ -21,10 +42,10 @@ function emailSend () {
         text-align: center;
         border: 1px solid rgba(180,198,204,0.66);
         border-radius: 17px;">
-        <img src="https://d1ulolibll5lbi.cloudfront.net/n66ecp%2Fpreview%2F56609790%2Fmain_large.png?response-content-disposition=inline%3Bfilename%3D%22main_large.png%22%3B&response-content-type=image%2Fpng&Expires=1710706096&Signature=J7OAxuGo~ae3aMh9dFoPynlhMZOA7ZozGjytLW0LQwsReAY8fTpXe~xpbJHZoRdccdKvKeraWVf2JzaQfnDp94txmvp3FoxJh7bcsI8ARV~-fjoSWX-LKXCWoSXBOFNnYxwLqw0ikniwDJbTsGF-KBPL~iJWsNyzbnXmAQIw~u-nYoar-rzttmct5uukWuQCNZuG6ehvEZsBnpa5tVaHXrbyevq7kjVoUH3tWEnKBfpUML~-1-jfdqIVSNxWEVn54wb8cpH74dtqtBTn2B1V8TpxxAxWrr1iLcca9D9kWWiAncv~HyPJyzvyV~RbTdZ6DjQIeMV7Hf0ZNqcH6P70OQ__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ" alt="logo" class="logo__item">
+        <img src="https://i.yapx.cc/XPE0i.png" alt="logo" class="logo__item">
           <p style="color: black;
             font-size: 24px;
-          ">I have received your message. 
+          ">Dear <b>${name}</b>, I received a message asking for help with your website (<span style="text-decoration: underline">${link}</span>). 
           You can see the verification code below. 
           Please copy it and go to the website to paste it into the input window</p>
           <hr style=" border: 2px black solid;

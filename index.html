@@ -266,12 +266,13 @@
 
 <div class="feedback">
     <div class="container">
-        <form onsubmit="emailSend(); reset(); return false;" class="feedback__form">
+        <!-- <form onsubmit="emailSend(); reset(); return false;" class="feedback__form"></form> -->
+        <form onsubmit="reset(); return false;" class="feedback__form">
             <input type="text" id="name" placeholder="Your name" name="name" required>
             <input type="text" id="email" placeholder="Your email" name="email" required>
-            <input type="text" id="link" placeholder="Your website(if exists)" name="website" required>
-            <input type="text" id="message" placeholder="How can I help?*" name="message" required>
-            <button type="submit" class="feedback__button">Get In Touch</button>
+            <input type="text" id="link" placeholder="Your website" name="link" required>
+            <input type="text" id="message" placeholder="How Can I Help?*" name="message" required>
+            <button type="submit" onclick="emailSend()" class="feedback__button">Get In Touch</button>
         </form>
     </div>
 </div>

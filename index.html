@@ -266,7 +266,6 @@
 
 <div class="feedback">
     <div class="container">
-        <!-- <form onsubmit="emailSend(); reset(); return false;" class="feedback__form"></form> -->
         <form onsubmit="reset(); return false;" class="feedback__form">
             <input type="text" id="name" placeholder="Your name" name="name" required>
             <input type="text" id="email" placeholder="Your email" name="email" required>
@@ -274,16 +273,33 @@
             <input type="text" id="message" placeholder="How Can I Help?*" name="message" required>
             <button type="submit" onclick="emailSend()" class="feedback__button">Get In Touch</button>
         </form>
+        <div class="feedback__description">
+            <p class="feedback__title">Let’s talk for<br>
+                 Something special</p>
+            <p class="feedback__description-text">
+                I seek to push the limits of creativity to create high-engaging, user-<br>friendly, and memorable interactive experiences.
+            </p>
+            <p class="feedback__contacts">philmillioner@gmail.com</p>
+            <p class="feedback__contacts">+7-(777)-777-77-77</p>
+        </div>
     </div>
 </div>
 
 <div class="footer">
-    <div class="container"></div>
+    <div class="container">
+        <ul class="footer__list">
+            <li class="footer__item">
+                <span class="footer__logo">
+                    <img src="assets/Logo.svg" alt="logo" class="logo__item">
+                    <h2 class="logo__item">Personal</h2>
+                </span>
+            </li>
+            <li class="footer__item"><p class="footer__item-copyright">&copy;2019-2024 Personal<br>Made By <b>MineDev</b></p></li>
+        </ul>
+    </div>
 </div>
 
-<script src="https://smtpjs.com/v3/smtp.js">
-
-</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="scripts/userContact.js"></script>
 
 </body>

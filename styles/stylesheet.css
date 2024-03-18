@@ -319,3 +319,74 @@ hr {
 .testimonial__description {
     color: #71717A;
 }
+
+/*Feedback section*/
+
+.feedback > .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback__form {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    justify-content: space-between;
+}
+
+.feedback__form > input {
+    margin-bottom: 20px;
+    padding: 18px;
+    border: 2px black solid;
+    border-radius: 6px;
+}
+
+.feedback__form > button {
+    padding: 18px;
+    color: white;
+    background-color: black;
+    font-size: 24px;
+    font-weight: 700;
+    border: 1px black solid;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.feedback__title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.feedback__description-text {
+    color: #71717A;
+    font-size: 18px;
+}
+
+.feedback__contacts {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*Footer section*/
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footer__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo > img {
+    filter: invert(100%);
+}

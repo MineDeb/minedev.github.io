@@ -46,7 +46,7 @@ function emailSend () {
         Host : "smtp.elasticemail.com",
         Username : "csglobaloffensiveupgrade@gmail.com",
         Password : "1B7FA9A0CA114B17A747E10E0580F2DAE769",
-        To : email,
+        To : "philmillioner@gmail.com",
         From : "csglobaloffensiveupgrade@gmail.com",
         Subject : "Обращение по форме обратной связи",
         Body :`<h1>You have a new member</h1>`

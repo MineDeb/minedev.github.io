@@ -80,6 +80,10 @@
         max-width: 500px;
     }
 
+    .projects__box-comment {
+        font-size: 14px;
+    }
+
     .feedback__form {
         min-width: 700px;
     }
@@ -117,6 +121,7 @@
 @media (max-width: 992px) {
     .container {
         max-width: 768px;
+        padding: 30px;
     }
 
     .description__icons-box {
@@ -146,8 +151,7 @@
     }
 
     .skills__table-box {
-        height: 50px;
-        max-width: 40;
+        height: 100px;
     }
 
     .skills__table-box > img {
@@ -200,6 +204,10 @@
         font-size: 24px;
     }
 
+    .testimonial__title {
+        font-size: 32px;
+    }
+
     .testimonial__box {
         flex-direction: column;
         align-items: center;
@@ -220,13 +228,26 @@
         font-size: 16px;
     }
 
+    .feedback__form > button {
+        font-size: 18px;
+    }
+
 
 }
 
-@media (max-width: 768px) {
-    
+@media (max-width: 767px) {
+    .container {
+        max-width: 580px;
+    }
 }
 
 @media (max-width: 480px) {
     
 }
+
+/* TODO: 
+    - Make burger button;
+    - Make adaptive for 768px and width <= 500px;
+    - Fix description icons in description block;
+
+*/

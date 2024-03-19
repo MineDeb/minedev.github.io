@@ -2,11 +2,14 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('form');
-    form.addEventListener('submit', formSend);
+    const success = document.getElementById('success');
     
+    form.addEventListener('submit', formSend);
     async function formSend(e) {
         e.preventDefault();
-        alert('SEND');
+        form.classList.add("hidden");
+        // success.classList.add("visible");
+        success.classList.add("visible");
         
         let formData = new FormData(form);
         
@@ -19,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
             method: 'POST',
             body: formData
         });
+        
         
         
         // if (userResponse.ok && devResponse.ok) {

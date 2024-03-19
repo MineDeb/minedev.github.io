@@ -26,20 +26,23 @@ $mail->Username = "csglobaloffensiveupgrade@gmail.com";
 $mail->Password = "arst vrdm ojdh atyv";
 
 $mail->setFrom($email, "MineDEV");
-$mail->addAddress("$email", "Dave");
+$mail->addAddress("$email", "$name");
 
 $mail->Subject = "REPLY FROM PERSONAL";
 $mail->Body = "<div style='
         font-family: system-ui;
         margin: 0 auto;
         max-width: 560px;
-        padding: 30px;
+        padding: 15px 30px;
         background-color: white;
         border-radius: 20px;
         transition: 0.3s;
         text-align: left;
         border: 1px solid rgba(180,198,204,0.66);
-        border-radius: 17px;'>
+        border-radius: 17px;
+        border-bottom: none;
+        border-radius: 16px 16px 0 0;
+        '>
         <img src='https://i.yapx.cc/XPE0i.png' alt='logo' class='logo__item'>
           <p style='color: black;
             font-size: 24px;
@@ -54,6 +57,23 @@ $mail->Body = "<div style='
           <p style='
             color: #bababd;
           '>Software Engineer</p>
-        </div>";
+        </div>
+        </div>
+        <div style='
+        font-family: system-ui;
+        margin: 0 auto;
+        max-width: 560px;
+        padding: 15px 30px;
+        background-color: black;
+        border-radius: 20px;
+        transition: 0.3s;
+        text-align: left;
+        border: 1px solid rgba(180,198,204,0.66);
+        border-top: none;
+        border-radius: 0 0 16px 16px;
+        '>
+          <p style='color: white; font-size: 16px; margin: 0px'>Personal <br> Created By <b>MineDev</b></p>
+        </div>
+        ";
 
 $mail->send();

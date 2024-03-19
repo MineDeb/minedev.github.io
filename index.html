@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="scripts/app.js"></script>
     <title>Portfolio Template</title>
 </head>
 <body>
@@ -266,12 +268,13 @@
 
 <div class="feedback">
     <div class="container">
-        <form onsubmit="reset(); return false;" class="feedback__form">
-            <input type="text" id="name" placeholder="Your name" name="name" required>
-            <input type="text" id="email" placeholder="Your email" name="email" required>
-            <input type="text" id="link" placeholder="Your website" name="link" required>
-            <input type="text" id="message" placeholder="How Can I Help?*" name="message" required>
-            <button type="submit" onclick="emailSend()" class="feedback__button">Get In Touch</button>
+        <form class="feedback__form" method="post" action="email.php" id="form">
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+            <input type="text" name="link" id="link" placeholder="Your Website" required>
+            <textarea name="message" id="message" placeholder="Your message" required></textarea>
+            
+            <button class="feedback__button">Get In Touch</button>
         </form>
         <div class="feedback__description">
             <p class="feedback__title">Let’s talk for<br>

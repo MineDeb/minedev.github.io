@@ -34,15 +34,193 @@
     .testimonial__card {
         max-width:250px;
     }
+
+    .feedback__title {
+        font-size: 32px;
+    }
+
+    .feedback__description {
+        max-width: 650px;
+    }
 }
 
 
 @media (max-width: 1200px) {
     
+    .container {
+        max-width: 992px;
+    }
+
+    .taskbar__item {
+        font-size: 18px;
+    }
+
+    .description__text-title {
+        font-size: 36px;
+    }
+
+    .testimonial__card {
+        max-width: 275px;
+        padding: 10px;
+    }
+
+    .testimonial__description {
+        font-size: 18px;
+    }
+
+    .description__image {
+        width: 50%;
+    }
+
+    .about__image {
+        width: 37%;
+    }
+
+    .about__block {
+        max-width: 500px;
+    }
+
+    .feedback__form {
+        min-width: 700px;
+    }
+
+    
+    .feedback__description {
+        max-width: 550px;
+    }
+
+    .feedback > .container {
+        flex-direction: column;
+    }
+
+    .resume {
+        padding: 13px;
+        font-size: 18px;
+    }
+
+    .skills__table-box {
+        height: 140px;
+    }
+
+    .description__icons-box {
+        width: 45px;
+        height: 45px;
+    }
+
+    .feedback__description {
+        max-width: 700px;
+        margin-top: 60px;
+    }
+
 }
 
 @media (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .description__icons-box {
+        width: 35px;
+        height: 35px;
+    }
+
+    .resume {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .resume > img {
+        width: 15%;
+    }
+
+    .description__text-title {
+        font-size: 28px;
+    }
+
+    .description__text > p {
+        font-size: 14px;
+    }
+
+    .skills__title {
+        font-size: 32px;
+    }
+
+    .skills__table-box {
+        height: 50px;
+        max-width: 40;
+    }
+
+    .skills__table-box > img {
+        width: 30%;
+    }
     
+    .experience__title {
+        font-size: 32px;
+        text-align: center;
+        color: white;
+    }
+
+    .experience__header {
+        align-items: center;
+    }
+
+    .experience__header-date {
+        font-size: 14px;
+    }
+
+    .experience__description {
+        font-size: 14px;
+    }
+
+    .about__title {
+        font-size: 32px;
+    }
+
+    .about__block {
+        max-width: 350px;
+    }
+
+    .about__block-description {
+        font-size: 14px;
+    }
+
+    .projects__title {
+        font-size: 32px;
+    }
+
+    .projects__box-item {
+        margin-top: 10px;
+    }
+
+    .projects__box-title {
+        font-size: 32px;
+    }
+
+    .projects__box-name {
+        font-size: 24px;
+    }
+
+    .testimonial__box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial__card {
+        max-width: 205px;
+        padding: 40px;
+        max-width: 400px;
+        margin-top: 30px;
+    }
+
+    .testimonial__description {
+        font-size: 16px;
+    }
+
+    .taskbar__item {
+        font-size: 16px;
+    }
+
+
 }
 
 @media (max-width: 768px) {

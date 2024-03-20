@@ -87,6 +87,9 @@
     transition: bottom .3s, transform .3s .15s;
   }
 
+.red {
+    background-color: red;
+}
 
 
 

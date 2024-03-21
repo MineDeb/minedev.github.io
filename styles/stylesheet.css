@@ -92,13 +92,15 @@
   }
 
 .menu {
-    display: none;
+    display: block;
     position: fixed;
     width: 100%;
-    right: 0;
+    right: -100%;
     height: 100%;
+    transition: 0.3s;
     z-index: 1;
     background-color: white;
+
 }
 
 
@@ -112,6 +114,7 @@
     height: 100%;
     text-decoration: underline;
     font-weight: 900;
+    padding: 0;
 }
 
 .menu__list-item {
@@ -124,7 +127,6 @@
 
 .showMenu {
     display: block;
-
 }
 
 
@@ -538,5 +540,5 @@ hr {
 }
 
 .visible {
-    display: block;
+    right: 0;
 }
